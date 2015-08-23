@@ -1,0 +1,15 @@
+--- squashfs-root/etc_ro/rcS.fresh	2013-06-25 06:37:26.272768946 -0700
++++ squashfs-root/etc_ro/rcS	2013-06-25 06:37:45.356529031 -0700
+@@ -8,7 +8,7 @@
+ goahead&
+ 
+ #for telnet debugging
+-#telnetd
++telnetd
+ 
+ #for syslogd
+ mkdir -p /var/log
+--- /dev/null	2013-07-03 18:31:56.372394772 -0700
++++ rootfs/etc_ro/passwd	2013-07-07 06:57:52.538187454 -0700
+@@ -0,0 +1 @@
++root::0:0:root:/:/bin/sh

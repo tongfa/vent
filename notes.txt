@@ -1,0 +1,17 @@
+wget https://github.com/downloads/libevent/libevent/libevent-2.0.19-stable.tar.gz
+tar -xf libevent-2.0.19-stable.tar.gz
+(cd libevent-2.0.19-stable/ ; ./configure )
+(cd libevent-2.0.19-stable/ ; make -j2 )
+(cd libevent-2.0.19-stable/ ; make verify )
+(cd libevent-2.0.19-stable/ ; sudo make install )
+sudo apt-get install python-pip
+sudo apt-get install python-dev
+sudo pip install gevent
+
+from gevent import wsgi
+from pong import application
+wsgi.WSGIServer(('', 8088), application, spawn=None).serve_forever()
+The above code will run the pong application without spawning a Greenlet on every request. If you leave out the argument ’spawn=None’ Gevent will spawn a Greenlet for every new request.
+
+sudo pip install Django
+

@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="{% static "audio.js" %}" type="text/javascript"></script>
+    <script><!--
+$(document).ready(function() {
+    var send = document.getElementById('send');
+    var stop = document.getElementById('stop');
+
+    var sendAudio, sendVideo;
+    send.onclick = function() {
+	send.disabled = true;
+	navigator.getUserMedia({
+	    audio: true,
+	    video: false
+	}, function(stream) {
+	    // var legalBufferValues = [256, 512, 1024, 2048, 4096, 8192, 16384];
+	    // sample-rates in at least the range 22050 to 96000.
+	    sendAudio = SendRTC(stream, {
+		//bufferSize: 16384,
+		//sampleRate: 45000
+	    });
+	    
+	    sendVideo = SendRTC(stream, {
+		type: 'video'
+	    });
+            
+	    sendAudio.start();
+            
+	    stop.disabled = false;
+	});
+    };
+    stop.onclick = function() {
+       send.disabled = false;
+       stop.disabled = true;
+    
+       sendAudio.stop();
+    };
+});
+--></script>
+    <script><!--
+      --></script>
+    <title>Audio Test</title>
+    </head>
+  <body>
+      This is an audio test.
+<button id="send">Send</button>
+<button id="stop" disabled>Stop</button>
+      </body>
+  </html>

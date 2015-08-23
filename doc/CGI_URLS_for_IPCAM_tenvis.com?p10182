@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>TENVIS IP Camera Forum &bull; View topic - CGI URLs for Ipcam</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - TENVIS IP Camera Forum" href="http://forum.tenvis.com/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="http://forum.tenvis.com/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - For Others" href="http://forum.tenvis.com/feed.php?f=13" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - CGI URLs for Ipcam" href="http://forum.tenvis.com/feed.php?f=13&amp;t=8723" />
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.tenvis.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=5&amp;lang=en&amp;sid=46975a4fcb4feb0d5dacf39f463fd912" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+            <div id="lidiv"><ul>
+            
+            <li class="lileft"><a href="http://www.tenvis.com/" title="TENVIS">TENVIS.com</a></li>
+            <li class="lileft"><a href="http://www.tenvis.com/where_to_buy.html" title="Where To Buy">Where To Buy</a></li>
+            <li class="lileft"><a href="http://www.tenvis.com/blog" title="TENVIS Blog">TENVIS Blog</a></li>
+            
+            <li id="rightli" class="liright"><a href="http://www.facebook.com/TenvisTechnology" title="Follow us on Facebook" target="_blank"><img src="./images/tenvis/facebook.png" style="vertical-align:middle;" /></a></li>
+            <li class="liright"><a href="https://twitter.com/tenvistech" title="Follow us on Twitter" target="_blank"><img src="./images/tenvis/twitter.png" style="vertical-align:middle;" /></a></li>
+            <li class="liright"><a href="http://www.youtube.com/user/tenviscamera" title="Follow us on Youtube" target="_blank"><img src="./images/tenvis/youtube.png" style="vertical-align:middle;" /></a></li>
+            
+            </ul></div>
+
+			<div id="site-description">
+				<a href="./index.php?sid=46975a4fcb4feb0d5dacf39f463fd912" title="Board index" id="logo"><img src="./images/tenvis/logo.png" /></a>
+				<h1>TENVIS IP Camera Forum</h1>
+				<p>Community for IP Camera Discussion, TENVIS Technical Support, and IP Cameras Reviews</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php?sid=46975a4fcb4feb0d5dacf39f463fd912" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=46975a4fcb4feb0d5dacf39f463fd912" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="46975a4fcb4feb0d5dacf39f463fd912" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=46975a4fcb4feb0d5dacf39f463fd912" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=1&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">Your TENVIS</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=8&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">Technical Support</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=13&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">For Others</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=13&amp;t=8723&amp;hilit=audio+RTP&amp;sid=46975a4fcb4feb0d5dacf39f463fd912&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+            
+				<li class="icon-faq"><a href="./faq.php?sid=46975a4fcb4feb0d5dacf39f463fd912" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=46975a4fcb4feb0d5dacf39f463fd912" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=13&amp;t=8723&amp;hilit=audio+RTP&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">CGI URLs for Ipcam</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Post all the other issues that you encounter while installing TENVIS IP Camera<br /></div>
+<p>
+	<strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=64&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">support</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=67&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">support05</a>
+</p>
+
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=13&amp;t=8723&amp;sid=46975a4fcb4feb0d5dacf39f463fd912" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=46975a4fcb4feb0d5dacf39f463fd912">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="8723" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="46975a4fcb4feb0d5dacf39f463fd912" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p10182" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p10182">CGI URLs for Ipcam</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=10182&amp;sid=46975a4fcb4feb0d5dacf39f463fd912#p10182"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=176&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">wiredcharlie</a></strong> &raquo; Mon Aug 05, 2013 3:58 pm </p>
+
+			
+
+			<div class="content">CGI URLs for Ipcam<br /><br />Before you access most of the cgi urls, you should be authorized first. Which means you should login(POST your account to /login) before your access other urls. Some of the URLs allow you embeding the account information in the url, or in the WWW-Authentication header.<br /><br />1. Following are the urls which accept embed account information.<br /><br />Snapshot<br />/snapshot[?[username=xxx&amp;userpwd=yyy&amp;]strm=N]<br /><br />Response : “Content-Type: image/jpeg”<br />N specify the resolution of the picture. <br />0 - Normal(default)<br />1 - Small<br /><br />Example:<br /><!-- m --><a class="postlink" href="http://192.168.0.233:8001/snapshot?username=admin&amp;userpwd&amp;strm=0">http://192.168.0.233:8001/snapshot?user ... pwd&amp;strm=0</a><!-- m --><br /><br /><br />PTZ Control<br />/ptzctrl?[username=xxx&amp;userpswd=yyy&amp;]act=action&amp;param=parameter<br />action<br />parameter<br />Remark<br />left<br />speed(1~64)<br />Pan left<br />right<br />speed<br />Pan right<br />up<br />speed<br />Tilt up<br />down<br />speed<br />Tilt down<br />callpsp<br />Number of pre-set point<br />Call the preset point<br />stop<br />-<br />Stop<br /><br /><br />Example:<br /><!-- m --><a class="postlink" href="http://192.168.0.233:8001/ptzctrl?act=left&amp;para=32">http://192.168.0.233:8001/ptzctrl?act=left&amp;para=32</a><!-- m --><br /><br /><br />Signal Alarm-Out<br />/ao[?username=xxx&amp;userpwd=yyy&amp;]<br />This url cause the ipcam send a signal to it's alarm-out pin for a while<br /><br />Reboot the device<br />/restart?obj=app&amp;username=XXXX&amp;password=YYYY<br /><br />2. Other URLs<br />Other URLs require user to login first, with POST method. Then, use the Cookie returned by the Ipcam in the subsequent requets.<br />The cookie's life period is 10'.<br />Here is the /login request and response:<br />Request:<br />POST /login HTTP/1.1<br />Content-Type: html/text<br />Content-Length: 25<br /><br />user=admin&amp;password=admin<br /><br />Response:<br />HTTP/1.1 200 OK<br />Cookie: cltid=#XDR$%XAZ2124<br /><br />Afterwards, to modify the video parameters of the main stream, you should send:<br /><br />POST /cfgh264?chn=0&amp;sub=0 HTTP/1.1<br />Content-Type: html/text<br />Content-Length: xxx<br /><br />fmode=0&amp;bps=1024&amp;fps=10&amp;gop=100<br /><br /><br /><br />Please refer to the 7th chapter of  IPCAM Web SDK Reference.doc for the URLs supported.<br /><br /><br />Mjpeg video stram URL：<br /><!-- m --><a class="postlink" href="http://192.168.0.233:8001/pushpic?username=admin&amp;userpwd=admin&amp;strm=2">http://192.168.0.233:8001/pushpic?usern ... min&amp;strm=2</a><!-- m --><br />MP4 video file download URl：<br /><!-- m --><a class="postlink" href="http://192.168.0.233:8001/download?file=/0/2011-12-02/0-164628.v264&amp;conv=mp4">http://192.168.0.233:8001/download?file ... 4&amp;conv=mp4</a><!-- m --><br /><br />RTSP<br />Video and <span class="posthilit">audio</span> stream can be retrieved by RTSP/<span class="posthilit">RTP</span> or interleaved RTSP. RTCP is not used.<br />Ip camera can provide different services on one port(Default 8001, servers both CTP/RTSP/HTTP), but the standard ports are also used.<br /><br />Authentication is required by camera, RTSP client should response to 401 and provides an account.<br /><br />Here are the urls(VCL) to access:<br />Media<br />URL<br />Video<br /><!-- m --><a class="postlink" href="rtsp://admin:admin@192.168.0.233">rtsp://admin:admin@192.168.0.233</a><!-- m -->[:8001]/0/videoN<br /><span class="posthilit">Audio</span><br /><!-- m --><a class="postlink" href="rtsp://admin:admin@192.168.0.233">rtsp://admin:admin@192.168.0.233</a><!-- m -->[:8001]/0/<span class="posthilit">audio</span><br />Video and <span class="posthilit">audio</span><br /><!-- m --><a class="postlink" href="rtsp://admin:admin@192.168.0.233">rtsp://admin:admin@192.168.0.233</a><!-- m -->[:8001]/0/avN<br /><br />Where N is the video stream index, can be 0(main stream code), 1(secondary stream code), ...</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile10182">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=176&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">wiredcharlie</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 10</dd><dd><strong>Joined:</strong> Wed Jul 10, 2013 10:28 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p10850" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p10850">Re: CGI URLs for Ipcam</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=10850&amp;sid=46975a4fcb4feb0d5dacf39f463fd912#p10850"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=67&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">support05</a></strong> &raquo; Tue Aug 06, 2013 7:45 am </p>
+
+			
+
+			<div class="content">thanks for sharing</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile10850">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=67&amp;sid=46975a4fcb4feb0d5dacf39f463fd912"><img src="./download/file.php?avatar=67_1373963028.png" width="77" height="75" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=67&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">support05</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 511</dd><dd><strong>Joined:</strong> Tue Jul 09, 2013 9:56 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=13&amp;t=8723&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=13&amp;t=8723&amp;sid=46975a4fcb4feb0d5dacf39f463fd912" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=13&amp;sid=46975a4fcb4feb0d5dacf39f463fd912" class="left-box left" accesskey="r">Return to For Others</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=46975a4fcb4feb0d5dacf39f463fd912" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="5">Community</option>
+			
+				<option value="6">&nbsp; &nbsp;News and Events</option>
+			
+				<option value="7">&nbsp; &nbsp;Forum Feedback</option>
+			
+				<option value="1">Your TENVIS</option>
+			
+				<option value="8">&nbsp; &nbsp;Technical Support</option>
+			
+				<option value="9">&nbsp; &nbsp;&nbsp; &nbsp;DDNS Setting &amp; Port Fowarding</option>
+			
+				<option value="10">&nbsp; &nbsp;&nbsp; &nbsp;Wireless Connection</option>
+			
+				<option value="11">&nbsp; &nbsp;&nbsp; &nbsp;Camera Feature FAQs</option>
+			
+				<option value="12">&nbsp; &nbsp;&nbsp; &nbsp;iPhone &amp; Android Phone Configuration</option>
+			
+				<option value="13" selected="selected">&nbsp; &nbsp;&nbsp; &nbsp;For Others</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<ul class="linklist">
+				
+			<li class="rightside"><a href="./ucp.php?mode=delete_cookies&amp;sid=46975a4fcb4feb0d5dacf39f463fd912">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+    <br />
+    <div class="ad_foot" style="text-align:center; background-color:#0c4365;"><span class="corners-top" style=" margin:0px;"><span></span></span><a href="http://forum.tenvis.com/viewtopic.php?f=6&t=36&sid=7e07ac9183bf384c2f5264d09f2ae03c" target="_self"><img src="./images/tenvis/banner_july.gif" style="vertical-align:middle;" /></a><span class="corners-bottom" style=" margin:0px;"><span></span></span></div>
+	<br />
+	<div class="copyright"><span class="corners-top"><span></span></span><div style="height:6px;"></div>Copyright @ 2013 <a href="http://www.tenvis.com">TENVIS</a> Technology Co., Ltd. All rights reserved.
+	<div style="height:6px;"></div><span class="corners-bottom"><span></span></span></div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

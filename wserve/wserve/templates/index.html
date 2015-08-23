@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script><!--
+$(document).ready(function() {
+    longcall();
+});
+
+function longcall() {
+    $.ajax({
+        url: '/lpoll',
+        dataType : 'json',
+        cache: false,
+        success: function(data) {
+            if ( data.result != 'OK' ) {
+                alert ('lpoll returned not OK');
+            }
+            if ( "cameras" in data.message ) {
+                camera_list.rx(data.message.cameras);
+            }
+            longcall();
+        }
+    });
+}
+
+var camera_list = {
+    rx: function(cameras) {
+        camera_list_div = $("#camera_list");
+        camera_list_div.children().each(function(c) {
+            camera_list_div.children()[c].seen = 'no'; } );
+        cameras.forEach(camera_list.updateOneCamera);
+        toDelete = [];
+        camera_list_div.children().each(function(c) {
+            if (camera_list_div.children()[c].seen == 'no') {
+                toDelete.push(c);
+            }
+        } );
+        toDelete.forEach(function (c) {
+            camera_list_div.children()[c].remove();
+        } );
+    },
+    updateOneCamera: function(camera) {
+        if ( $("#c" + camera[0]).length ) {
+            $("#c" + camera[0])[0].seen = "yes";
+            return;
+        }
+        camera_list_div = $("#camera_list");
+        newCamera = $("<div/>");
+        newCamera.attr('id', 'c' + camera[0]);
+        newCamera.attr('seen', 'new');
+        newCamera.append($('<a href="' + camera[1] + '">' +
+                           camera[2] + "</a>"));
+        camera_list_div.append(newCamera);
+    },
+}
+--></script>
+    <title>Web Service</title>
+    </head>
+  <body>
+      Please choose one of the following cameras:
+      <div id="camera_list"/>
+      </body>
+  </html>
